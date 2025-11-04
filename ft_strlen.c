@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:41:04 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/25 12:11:48 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/11/02 18:38:39 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 size_t	ft_strlen(const char *r)
 {
 	size_t	i; 
-
 	i = 0;
 	while (r[i])
 		i++;

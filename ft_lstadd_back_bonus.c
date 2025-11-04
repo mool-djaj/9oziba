@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 15:04:04 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/25 15:04:05 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/31 06:19:11 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	node = ft_lstlast(*lst);
 	node->next = new;
-	new->next = NULL;
 }

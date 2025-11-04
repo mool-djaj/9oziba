@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:43:55 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/25 21:41:27 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/28 20:35:07 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ static char	*word_fill(const char *s, char c)
 	return (ft_substr(s, start, end - start));
 }
 
-static char	**ft_ptrml(const char *s, char c)
+static char	**ft_s_mall(const char *s, char c)
 {
 	char	**d;
 	size_t	i;
@@ -78,7 +78,9 @@ char	**ft_split(char const *s, char c)
 	char	*word;
 
 	i = 0;
-	d = ft_ptrml(s, c);
+	d = ft_s_mall(s, c);
+	if (!d)
+		return (NULL);
 	while (*s)
 	{
 		while (*s && *s == c)
@@ -87,7 +89,10 @@ char	**ft_split(char const *s, char c)
 			break ;
 		word = word_fill(s, c);
 		if (!word)
-			return (free_split(d, i), NULL);
+		{
+			free_split(d, i);
+			return (NULL);
+		}
 		d[i++] = word;
 		s += ft_strlen(word);
 	}

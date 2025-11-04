@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:39:55 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 10:39:56 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/11/03 17:37:17 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,18 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+// #include "libft.h"
+// #include <stdio.h>
+// #include <string.h>
+
+// int main(void)
+// {
+//     char s1[] = "2";
+//     char s2[] = "5";
+
+//     printf("Test\n");
+//     printf("ft_memcmp: %d\n", ft_memcmp(s1, s2, sizeof()));
+//     printf("memcmp:    %d\n", memcmp(s1, s2, 12));
+
+//     return 0;
+// }

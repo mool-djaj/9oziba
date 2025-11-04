@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 12:52:43 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/21 12:52:44 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/11/03 21:42:19 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_numlen(long n)
 {
-	size_t	len;
+	long	len;
 
 	len = 0;
 	if (n <= 0)
@@ -54,4 +54,8 @@ char	*ft_itoa(int n)
 	if (n < 0)
 		d[0] = '-';
 	return (d);
+}
+int main()
+{	
+		
 }

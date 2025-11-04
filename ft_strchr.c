@@ -6,7 +6,7 @@
 /*   By: akaarich <akaarich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:40:42 by akaarich          #+#    #+#             */
-/*   Updated: 2025/10/25 11:18:57 by akaarich         ###   ########.fr       */
+/*   Updated: 2025/10/26 16:44:40 by akaarich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *str, int c)
 			return ((char *)(str + i));
 		i++;
 	}
-	if (c == '\0')
+	if ((char) c == '\0')
 		return ((char *)(str + i));
 	return (NULL);
 }
